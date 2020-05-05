@@ -1,14 +1,19 @@
 <html>
 <head>
-<title>пыщ пыщ ололо я водитель нло</title>
+<title>Текст 2847</title>
 </head>
 <body>
-<p> <a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
+<!--в таблице справа пихнуть основной текст, слева раскрывающиеся блоки с сочинениями-->
+<table>
+  <tr>
+    <td><p>мяу тут основной текст!</p></td>
+    <td><p> <a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
 <div id="hidden1" style="display: none;">
 <p> Давно хотела признаться миру, что я ненавижу комаров. </p></div><hr>
 <p> <a href="hidden2" onclick="view('hidden2'); return false">Сочинение 2</a></p>
 <div id="hidden2" style="display: none;">
 <p> Дорогие друзья! Если вы читаете этот текст, значит, всё снова пошло по плану, и мир скоро будет захвачен роботами-убийцами </p></div>
+    </td></tr></table>
 <script>function view(n) {
 style = document.getElementById(n) .style;
 style.display = (style.display == 'block') ? 'none' : 'block';
