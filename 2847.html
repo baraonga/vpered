@@ -7,8 +7,13 @@
 width: 800px;
 background: #ffefd5;
     border: 2px solid #ffffff
-overflow-x: scroll;
 overflow-y: scroll;
+  }
+.soch {
+height: 700px;
+wight: 800px;
+  background: #deb887;
+  border: 2px solid #ffffff
   }
   </style>
 </head>
@@ -33,12 +38,12 @@ overflow-y: scroll;
 <i>*Туберовская Ольга Михайловна (род. в 1940 г.) - советский писатель, искусствовед, автор книги «В гостях у картин».</i>
 Источник текста: МИОО: Тренировочная работа 28.01.2013 вариант 1.
       </div></p></td>
-    <td><p> <a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
+    <td><p><div class="soch"><a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
 <div id="hidden1" style="display: none;">
 <p> Давно хотела признаться миру, что я ненавижу комаров. </p></div><hr>
 <p> <a href="hidden2" onclick="view('hidden2'); return false">Сочинение 2</a></p>
 <div id="hidden2" style="display: none;">
-<p> Дорогие друзья! Если вы читаете этот текст, значит, всё снова пошло по плану, и мир скоро будет захвачен роботами-убийцами </p></div>
+<p> Дорогие друзья! Если вы читаете этот текст, значит, всё снова пошло по плану, и мир скоро будет захвачен роботами-убийцами </p></div></div>
     </td></tr></table>
 <script>function view(n) {
 style = document.getElementById(n) .style;
