@@ -1,0 +1,31 @@
+<html>
+
+<head>
+
+<title>пыщ пыщ ололо я водитель нло</title>
+
+</head>
+
+<body>
+
+<p> <a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
+
+<div id="hidden1" style="display: none;">
+<p> пыщ пыщ ололо я водитель нло </p></div><hr>
+
+<p> <a href="hidden2" onclick="view('hidden2'); return false">Сочинение 2</a></p>
+
+<div id="hidden2" style="display: none;">
+<p> мяу мяу котики круче чем пёсики и ещё я съел арбуз! </p></div>
+
+<script>function view(n) {
+
+style = document.getElementById(n) .style;
+
+style.display = (style.display == 'block') ? 'none' : 'block';
+
+}</script> 
+
+</body>
+
+</html>
