@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Отправить сочинение</title>
+<style>
+BODY {
+background: #a2b5cd;
+}
+A: {
+color: #6e7b8b;
+}
+A:visited {
+color: #6e7b8b;
+}
+A:active {
+color: #6e7b8b;
+}
+</style>
+</head>
+<body>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdihrvmZ8Q3jnChIzR9ju977iqkqf94ChREclysZ34yxivS0g/viewform?embedded=true" width="500" height="275" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+</body>
+</html>
