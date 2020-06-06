@@ -101,7 +101,8 @@ overflow-y: scroll;
 <textarea name = "writehere" rows = "25" cols = "70" placeholder="Тут можно писать"
 onkeyup="document.getElementById ('count').value = this.value.length"
 onblur="document.getElementById ('count').value = this.value.length"></textarea>
-<p >Введено <input id="count"> букв</p>
+<input type="hidden" id="count" value="Символов введено:">
+<input type="hidden" id="msg06" value="Количество слов:">
 </form></tr></td></table>
 </body>
 </html>
