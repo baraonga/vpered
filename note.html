@@ -97,15 +97,11 @@ overflow-y: scroll;
 <p>Профессор недовольно покачал головой и стал снова смотреть вверх, на яркий свет разрисованного осенними травами фонаря-гифу.</p>
 <p><i>[1] "Из глубины» (лат.).</i></p>
       </div></p></td><td><p><div class="soch"><h2>Черновик</h2>
-<form aling="middle">
-<textarea  name = "auth_msg" rows = "25" cols = "70">пиши</textarea>
-<p><span id="charsLeft"></span>&nbsp;знаков осталось.				
-  </span></p> 
+<form>
+<textarea name = "writehere" rows = "25" cols = "70" placeholder="Тут можно писать"
+onkeyup="document.getElementById ('count').value = this.value.length"
+onblur="document.getElementById ('count').value = this.value.length"></textarea>
+<p >Введено <input id="count"> букв</p>
 </form></tr></td></table>
-<script type="text/javascript">			
-$(document).ready(function(){				
-$('textarea').limit('800','#charsLeft');			
-});		
-</script> 
 </body>
 </html>
