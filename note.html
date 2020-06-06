@@ -34,6 +34,8 @@ overflow-x: scroll;
 overflow-y: scroll;
   }
   </style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.limit.js"></script>
 </head>
 <body><table>
   <tr>
@@ -97,6 +99,13 @@ overflow-y: scroll;
       </div></p></td><td><p><div class="soch"><h2>Черновик</h2>
 <form aling="middle">
 <textarea  name = "auth_msg" rows = "25" cols = "70">пиши</textarea>
+<span id="charsLeft"></span>&nbsp;знаков осталось.				
+</span> 
 </form></tr></td></table>
+<script type="text/javascript">			
+$(document).ready(function(){				
+$('textarea').limit('800','#charsLeft');			
+});		
+</script> 
 </body>
 </html>
