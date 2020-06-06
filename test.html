@@ -1,31 +1,28 @@
 <html>
 <head>
 <title> мяу</title>
+<script type="text/javascript">
+$(function() {
+$("#send").click(function(){
+var author = $("#author").val();
+var message = $("#message").val();
+var stranica = $("#stranica").val();
+$.ajax({
+type: "POST",
+url: "sendMessage.php",
+data: {"author": author, "message": message, "stranica": stranica},
+cache: false,
+success: function(response){
+var messageResp = new Array();
+var resultStat = messageResp[Number(response)];
+if(response == 0){
+$("#author").val("");
+$("#message").val("");
+$("#commentBlock").append("<div class='comment'><strong>"+author+"</strong><br>"+message+"</div>");
+}$("#resp").text(resultStat).show().delay(1500).fadeOut(800);}});return false;});});
+</script>
 </head>
 <body>
-<form name="comment" action="comment.php" method="post">
-  <p>
-    <label>Имя:</label>
-    <input type="text" name="name" />
-  </p>
-  <p>
-    <label>Комментарий:</label>
-    <br />
-    <textarea name="text_comment" cols="30" rows="12"></textarea>
-  </p>
-  <p>
-    <input type="hidden" name="page_id" value="test.html" />
-    <input type="submit" value="Отправить" />
-  </p>
-</form>
-?php
-  $page_id = 150;// Уникальный идентификатор страницы (статьи или поста)
-  $mysqli = new mysqli("localhost", "root", "", "db");// Подключается к базе данных
-  $result_set = $mysqli->query("SELECT * FROM `comments` WHERE `page_id`='$page_id'"); //Вытаскиваем все комментарии для данной страницы
-  while ($row = $result_set->fetch_assoc()) {
-    print_r($row); //Вывод комментариев
-    echo "<br />";
-  }
-?>
+
 </body>
 </html>
