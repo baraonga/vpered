@@ -78,8 +78,12 @@ overflow-y: scroll;
 Сформулируйте позицию автора (рассказчика). Выразите своё отношение к позиции автора по проблеме исходного текста (согласие или несогласие) и обоснуйте его.
 Объём сочинения — не менее 150 слов.
 Работа, написанная без опоры на прочитанный текст (не по данному тексту), не оценивается. Если сочинение представляет собой пересказанный или полностью переписанный исходный текст без каких бы то ни было комментариев, то такая работа оценивается 0 баллов.
-  Сочинение пишите аккуратно, разборчивым почерком. </p><hr>
-<p><a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
+  Сочинение пишите аккуратно, разборчивым почерком. </p>
+  <hr><p><form>
+<textarea name = "writehere" rows = "20" cols = "100" placeholder="Тут можно писать - это черновик"></textarea>
+  </form></div></p>
+</td></tr></table><hr>
+<div align="middle"><p><a href="hidden1" onclick="view('hidden1'); return false">Сочинение 1</a></p>
 <div id="hidden1" style="display: none;">
 <!-- МЕСТО НОМЕР РАЗ -->
 <p>пока что тут ничего нет</p></div>
@@ -102,12 +106,7 @@ overflow-y: scroll;
   <p><i><a href="hidden03" onclick="view('hidden03'); return false">Комментарий</a> Екатерины Анатольевны к сочинению 3</i></p>
   <div id="hidden03" style="display: none;">
     <!-- КОММЕНТАРИЙ ТРИ -->
-    <p>пока нет</p></div></div>
-</td></tr></table>
-<p align="middle"><hr><a href="chern" onclick="view('chern'); return false">Черновик</a></p>
-<div id="chern" style="display: none;"><p><form>
-<textarea name = "writehere" rows = "20" cols = "100" placeholder="Тут можно писать"></textarea>
-  </form></div></p>
+    <p>пока нет</p></div></div></div></p>
 <script>function view(n) {
 style = document.getElementById(n) .style;
 style.display = (style.display == 'block') ? 'none' : 'block';
